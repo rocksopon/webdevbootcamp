@@ -1,0 +1,2 @@
+git remote add origin git@github.com:rocksopon/KTB-Test.git	
+git push -u origin master

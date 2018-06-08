@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="app">
+            <a :href="url">{{url}}</a>
+
+            <h1 @click="number++">{{number}}</h1>
+
+            <h1 @click="number--">Decrease</h1>
+            <form action="" @submit.prevent="number++">
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                number: 10,
+                url: 'http://www.google.com',
+                message: ''
+            }
+        })
+    </script>
+
+</body>
+
+</html>

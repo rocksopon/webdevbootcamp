@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div id="app">
+    <a :href="url">Click</a>
+    <h1 :data="dynamicId">{{dynamicId}}</h1>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            dynamicId: 30,
+            url: 'http://www.google.com'
+        }
+    })
+</script>
+
+</html>
